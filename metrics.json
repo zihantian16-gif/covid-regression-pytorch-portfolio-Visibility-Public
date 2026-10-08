@@ -1,0 +1,28 @@
+{
+  "task": "continuous-value regression, not individual diagnosis or classification",
+  "seed": 42,
+  "rows_train": 2160,
+  "rows_valid": 540,
+  "rows_unlabeled_test": 893,
+  "features": 93,
+  "best_epoch": 124,
+  "baseline_mean": {
+    "mse": 61.7432861328125,
+    "rmse": 7.857689617999205,
+    "mae": 6.709662914276123,
+    "r2": -0.00011072773666520597
+  },
+  "baseline_ridge": {
+    "mse": 0.9541949033737183,
+    "rmse": 0.9768290041628157,
+    "mae": 0.7303627729415894,
+    "r2": 0.9845440593573316
+  },
+  "pytorch_mlp": {
+    "mse": 0.9654722809791565,
+    "rmse": 0.9825844905040769,
+    "mae": 0.7588413953781128,
+    "r2": 0.9843613897157015
+  },
+  "caveat": "Metrics are from one random validation split; the unlabeled test set has no score."
+}
